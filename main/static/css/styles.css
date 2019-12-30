@@ -1,6 +1,29 @@
 .sidebar-nav {
-    margin-top: 20px;
-    padding: 0;
+    position: fixed;
+    padding-left: 20px ;
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 50px;
     list-style: none;
-    background-color: dimgray;
+    background-color: rgba(105, 105, 105, 0.534);
+}
+
+body{
+    background-color: lightslategray;
+}
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: white;
+    background-color: yellowgreen;
+}
+
+a:active{
+    background-color: lightgrey;
 }
