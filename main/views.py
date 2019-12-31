@@ -7,3 +7,20 @@ def index(request):
 
     # Render the HTML template index.html with the data in the context variable
     return render(request, 'index.html')
+
+
+
+def utils(request):
+    """ view function for a mix of utilities"""
+
+    return render(request,'utils.html')
+
+def projects(request):
+    """ view functions for projects page """
+
+    return render(request,'projects.html')
+    
+def other(request):
+    """ view functions for "other" page """
+
+    return render(request,'other.html')
