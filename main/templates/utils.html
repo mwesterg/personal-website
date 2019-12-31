@@ -1,7 +1,10 @@
 {% extends "base_generic.html" %}
 
-{% block content %}
 
+    
+{% block content %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/utils_styles.css' %}">
   <h1>Utilities</h1>
   <p>In this page there are a mix of tools developed to help me and hopefully others.</p>
 
@@ -9,6 +12,13 @@
   <p>Quick and dirty sine wave quantizer focused for implementation in a SPWM controller.</p>
   <p>Insert the number of bits of your ADC and the number of samples per period of the sinewave.</p>
 
-  
+  {% load spwm_converter %}
+  {% spwm_converter 8 20 as SPWM %}
+<div class="code_box">
+  <code >
+    <div> {{SPWM}} </div>
+  </code>
+</div>
+
   
 {% endblock %}
