@@ -18,9 +18,19 @@ def utils(request):
 def projects(request):
     """ view functions for projects page """
 
-    return render(request,'projects.html')
+    return render(request,'contru.html')
     
 def other(request):
     """ view functions for "other" page """
 
-    return render(request,'other.html')
+    return render(request,'contru.html')
+
+def contact(request):
+    """ view functions for "other" page """
+
+    return render(request,'contru.html')
+
+def about(request):
+    """ view functions for "other" page """
+
+    return render(request,'contru.html')
